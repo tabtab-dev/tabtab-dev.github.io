@@ -28,76 +28,80 @@
 0%
 </div> <!-- 悬停提示 --> <div class="absolute right-full mr-2 top-1/2 -translate-y-1/2 bg-slate-800 dark:bg-slate-700 text-white text-xs px-2 py-1 rounded shadow-lg opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none whitespace-nowrap" data-astro-cid-7jjqptxk>
 返回顶部
-</div> </div> </div> </div> </div> </aside> <!-- 顶部目录（<1024px 显示，可折叠） --> <!-- 文章内容 --> <article id="article-content" class="prose dark:prose-invert max-w-none mb-8 flex-1" data-astro-cid-7jjqptxk> <p>今天，我又开通了这个博客。</p>
-<p>当我在键盘上敲下这行字的时候，心里突然涌起一阵莫名的熟悉感。仿佛时光倒流，回到了2014年的那个夏天——我第一次用颤抖的手指在键盘上敲下<code>Hello World</code>的时候。</p>
+</div> </div> </div> </div> </div> </aside> <!-- 顶部目录（<1024px 显示，可折叠） --> <!-- 文章内容 --> <article id="article-content" class="prose dark:prose-invert max-w-none mb-8 flex-1" data-astro-cid-7jjqptxk> <p>今日重启博客，心头泛起一丝温柔的涟漪。指尖落在键盘上，仿佛又回到那年夏天，初学编程的我，怀着些许忐忑与憧憬，敲下第一个“Hello World”。时光如水，流转间，许多过往悄然沉淀。</p>
 <h2 id="2014年的那个夏天">2014年的那个夏天</h2>
-<p>那是2014年，我刚刚接触编程不久。记得是在一个闷热的下午，我坐在学校机房的角落里，面前是一台老旧的联想电脑。屏幕上是刚装好的XAMPP，旁边摊着一本翻得卷边的《PHP从入门到精通》。</p>
-<p>那时候的我，连CSS浮动都搞不明白，却雄心勃勃地想要”做一个属于自己的网站”。</p>
-<p>第一个博客是用WordPress搭建的，主题是Twenty Fourteen。为了让它看起来不那么”官方”，我花了整整一个星期研究怎么改CSS。那时候没有现在的Tailwind，没有组件库，每一个像素都要自己调。</p>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="php"><code><span class="line"><span style="color:#6A737D">// 2014年的我写的第一个PHP函数</span></span>
-<span class="line"><span style="color:#F97583">function</span><span style="color:#B392F0"> get_latest_posts</span><span style="color:#E1E4E8">() {</span></span>
-<span class="line"><span style="color:#E1E4E8">    $query </span><span style="color:#F97583">=</span><span style="color:#9ECBFF"> "</span><span style="color:#F97583">SELECT</span><span style="color:#F97583"> *</span><span style="color:#F97583"> FROM</span><span style="color:#9ECBFF"> wp_posts </span><span style="color:#F97583">WHERE</span><span style="color:#9ECBFF"> post_status</span><span style="color:#F97583">=</span><span style="color:#9ECBFF">'publish' </span><span style="color:#F97583">ORDER BY</span><span style="color:#9ECBFF"> post_date </span><span style="color:#F97583">DESC</span><span style="color:#9ECBFF">"</span><span style="color:#E1E4E8">;</span></span>
-<span class="line"><span style="color:#F97583">    return</span><span style="color:#79B8FF"> mysql_query</span><span style="color:#E1E4E8">($query); </span><span style="color:#6A737D">// 是的，那时候还在用mysql_query</span></span>
+<p>那是2014年，初入大学。戴教授的C#课，机房里一排排老旧的电脑，屏幕上浮现着Visual Studio 2010的蓝色光影。</p>
+<p>彼时的我，尚不识变量与循环，却对未知世界充满好奇。戴教授言语风趣，常以生活琐事解说晦涩道理。第一次写C#程序，是在老师的引导下，屏幕上浮现“Hello World”，黑色窗口里仿佛藏着一整个新世界。</p>
+<p>后来做课程设计，笨拙地用C#写了第一个小工具。虽简陋，却自得其乐。那时没有现成的框架和库，许多问题都靠自己琢磨。</p>
+<blockquote>
+<p>2014年的我写的第一个 ASP.NET 函数</p>
+</blockquote>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="csharp"><code><span class="line"><span style="color:#6A737D">// 2014年的我写的第一个 ASP.NET 函数</span></span>
+<span class="line"><span style="color:#F97583">public</span><span style="color:#B392F0"> DataTable</span><span style="color:#B392F0"> GetLatestPosts</span><span style="color:#E1E4E8">()</span></span>
+<span class="line"><span style="color:#E1E4E8">{</span></span>
+<span class="line"><span style="color:#F97583">    string</span><span style="color:#B392F0"> query</span><span style="color:#F97583"> =</span><span style="color:#9ECBFF"> "SELECT * FROM wp_posts WHERE post_status='publish' ORDER BY post_date DESC"</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#B392F0">    SqlConnection</span><span style="color:#B392F0"> conn</span><span style="color:#F97583"> =</span><span style="color:#F97583"> new</span><span style="color:#B392F0"> SqlConnection</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">"your-connection-string"</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#B392F0">    SqlDataAdapter</span><span style="color:#B392F0"> da</span><span style="color:#F97583"> =</span><span style="color:#F97583"> new</span><span style="color:#B392F0"> SqlDataAdapter</span><span style="color:#E1E4E8">(query, conn);</span></span>
+<span class="line"><span style="color:#B392F0">    DataTable</span><span style="color:#B392F0"> dt</span><span style="color:#F97583"> =</span><span style="color:#F97583"> new</span><span style="color:#B392F0"> DataTable</span><span style="color:#E1E4E8">();</span></span>
+<span class="line"><span style="color:#E1E4E8">    da.</span><span style="color:#B392F0">Fill</span><span style="color:#E1E4E8">(dt); </span><span style="color:#6A737D">// 是的，那时候还在用 DataTable 和 SqlDataAdapter</span></span>
+<span class="line"><span style="color:#F97583">    return</span><span style="color:#E1E4E8"> dt;</span></span>
 <span class="line"><span style="color:#E1E4E8">}</span></span></code></pre>
-<p>现在回头看，代码写得一塌糊涂，但那种创造的喜悦，至今难忘。</p>
+<p>如今回望，那些稚嫩的代码早已模糊，但初次创造的欢喜，却如夏日微风，至今仍在心头轻轻荡漾。</p>
 <h2 id="那些年我们一起追过的技术">那些年，我们一起追过的技术</h2>
-<p>2014年到2017年，是我技术成长的黄金时期。</p>
-<ul>
-<li><strong>2015年</strong>：从WordPress到Hexo，第一次接触静态网站生成器</li>
-<li><strong>2016年</strong>：折腾Jekyll，学会了Git和GitHub Pages</li>
-<li><strong>2017年</strong>：开始用VuePress，接触现代前端框架</li>
-</ul>
-<p>每一个阶段，博客都是我学习的见证。从PHP到Node.js，从jQuery到React，从Bootstrap到Tailwind CSS，技术栈在不断变化，但记录的习惯从未改变。</p>
-<p>记得最疯狂的一次，是为了给博客加一个”黑夜模式”，连续熬了三个晚上。那时候没有现成的解决方案，全靠谷歌和自己摸索。当终于在凌晨三点看到那个月亮图标成功切换主题的时候，兴奋得差点吵醒室友。</p>
+<p>2016年盛夏，步入职场。那时的我，日日与jQuery为伴，琐碎的表单、细密的交互，皆在指尖流转。</p>
+<p>2017至2018，前端世界风起云涌。偶尔用Vue做些小巧的尝试，更多时候仍在老系统间穿梭。2019年，终于在项目中大展拳脚，感受到新技术的澎湃。</p>
+<p>2021年，买房安家，生活有了新的重量。2023年，初识Tailwind CSS，原子化的风格让开发变得轻盈。</p>
+<p>2024年，人生又添新篇，婚礼如约而至。</p>
+<p>每一段时光，博客都静静见证着我的成长。从jQuery到Vue，从Bootstrap到Tailwind CSS，技术在变，记录的心却未曾改变。</p>
+<p>记得有一次，为了给博客加上“黑夜模式”，连熬三夜。没有现成方案，只能在无数网页和文档中摸索。凌晨三点，月亮图标终于亮起，心头的雀跃几乎要溢出屏幕。</p>
 <h2 id="断更的这些年">断更的这些年</h2>
-<p>2018年之后，工作越来越忙，生活越来越复杂，博客渐渐被搁置了。</p>
+<p>2018年以后，工作渐忙，生活愈发琐碎，博客也慢慢搁浅。</p>
 <ul>
-<li><strong>2018年</strong>：换了工作，开始996的生活</li>
-<li><strong>2019年</strong>：买了房子，开始还房贷</li>
+<li><strong>2018年</strong>：开始接触核心业务，开始996的生活</li>
 <li><strong>2020年</strong>：疫情来了，整个世界都变了</li>
-<li><strong>2021-2023年</strong>：结婚、生子，人生进入了新的阶段</li>
+<li><strong>2021年</strong>：换工作，买房，正式成为房奴</li>
+<li><strong>2024年</strong>：结婚生娃，人生进入新阶段</li>
 </ul>
-<p>博客的域名过期了，GitHub Pages的仓库也长满了杂草。偶尔想起，也只是匆匆一瞥，然后继续投入到生活的洪流中。</p>
+<p>博客的域名悄然过期，GitHub Pages的仓库也荒草丛生。偶尔想起，不过是匆匆一瞥，便又被生活的洪流裹挟而去。</p>
 <h2 id="为什么又回来了">为什么又回来了？</h2>
-<p>其实这个问题，我自己也问了很多遍。</p>
-<p>也许是因为最近看了一部电影，里面主人公说：“我们终其一生寻找的，不过是那个最初的自己。”</p>
-<p>也许是因为整理旧电脑时，发现了2014年写的那些稚嫩却真诚的博客文章。</p>
-<p>也许是因为，在这个信息爆炸的时代，突然怀念起了那种慢下来、认真记录的感觉。</p>
-<p>但更多的，我想是因为：<strong>技术会变，工具会变，但那份想要分享、想要记录的心情从未改变</strong>。</p>
+<p>其实“为什么又回来了”这个问题，我也问过自己许多次。</p>
+<p>也许是某天电影里的台词触动了心弦：“我们终其一生寻找的，不过是那个最初的自己。”
+也许是整理旧电脑时，翻出那些稚嫩却真诚的旧文。
+也许是在信息爆炸的时代，忽然怀念起慢下来、静静记录的日子。
+但更多的，是因为：<strong>技术会变，工具会变，那份想要记录与分享的心情却始终未变。</strong></p>
 <h2 id="十年后的我和十年前的我">十年后的我，和十年前的我</h2>
-<p>十年过去了，很多东西都变了：</p>
+<p>十年光阴，许多事物悄然更迭：</p>
 <ul>
-<li><strong>技术变了</strong>：从PHP到Astro，从MySQL到Markdown</li>
-<li><strong>工具变了</strong>：从Dreamweaver到VS Code，从FTP到Git</li>
-<li><strong>我也变了</strong>：从青涩的学生到两个孩子的父亲</li>
+<li><strong>技术变了</strong>：从最初的C#、jQuery，到如今主力用Vue和Tailwind CSS，后端也涉足JAVA、Node.js、Rust。</li>
+<li><strong>工具变了</strong>：从Visual Studio 2010到VS Code，从SVN到Git，从本地服务器到云端。</li>
+<li><strong>生活变了</strong>：从青涩学生到成家立业，买房、结婚，身份与责任悄然生长。</li>
 </ul>
-<p>但有些东西从未改变：</p>
+<p>但有些东西始终未变：</p>
 <ul>
-<li>还是喜欢在深夜敲代码</li>
-<li>还是会为一个小功能的成功实现而欣喜若狂</li>
-<li>还是相信技术能让世界变得更好</li>
+<li>依然喜欢在深夜敲代码，享受静谧的创造时光</li>
+<li>依然会为一个小功能的实现而欣喜</li>
+<li>依然相信技术能让生活更美好</li>
 </ul>
 <h2 id="写给十年前的自己">写给十年前的自己</h2>
-<p>如果时光能够倒流，我想对2014年的那个少年说：</p>
-<p>“谢谢你开始了这段旅程。你不知道，你今天的这个决定，会在十年后依然影响着另一个你。</p>
-<p>别担心代码写得不好，别担心设计不够美观，别担心没人看你的博客。重要的是开始，是坚持，是那份对技术的热爱。</p>
-<p>你会走很多弯路，会踩很多坑，会无数次想要放弃。但请记住，每一次挫折都是成长，每一次坚持都会在未来某个时刻开花结果。“</p>
+<p>若时光可回溯，我想对2014年的那个少年说：</p>
+<p>“谢谢你勇敢地选择了计算机这条路。你不会想到，十年后你会靠写代码养家糊口，会在深夜为一个小bug辗转反侧，也会因技术的进步而心生欢喜。</p>
+<p>别怕无知，别怕出错。保持好奇与热情，慢慢积累，静静记录。</p>
+<p>你会遇到许多挑战，也会收获许多温柔。每一次坚持，终会成为未来的底气。”</p>
 <h2 id="写给未来的自己">写给未来的自己</h2>
-<p>也许再过十年，我会再次看到这篇文章。</p>
-<p>那时候的我，会在哪里？用什么技术？过着怎样的生活？</p>
-<p>我不知道。</p>
-<p>但我知道，无论未来如何变化，我都会记得今天重新开始的勇气，记得那份对技术的初心，记得2014年那个夏天，第一次让<code>Hello World</code>出现在浏览器上的喜悦。</p>
+<p>也许再过十年，我会再次读到这篇文章。</p>
+<p>那时的我，会在哪里？是否还在写代码？是否有了更多的牵挂？</p>
+<p>也许技术又变了，生活又有了新的波澜。但愿你依然热爱，依然愿意记录，依然记得那个在机房敲下第一个“Hello World”的自己。</p>
 <h2 id="新的开始">新的开始</h2>
-<p>兜兜转转，又回到了原点。</p>
-<p>但这不是终点，而是新的起点。</p>
-<p>这一次，不再是为了炫技，不再是为了流量，只是为了记录，为了分享，为了在这个喧嚣的世界里，留下一点属于自己的声音。</p>
+<p>兜兜转转，终又回到原点。</p>
+<p>这不是终点，而是新的起点。</p>
+<p>这一次，不为炫技，不为流量，只为记录成长、分享心事，也为未来的自己留下一点温柔的回音。</p>
 <p>你好，博客。
 我们又见面了。</p>
 <p><strong>十年前的我，你好。</strong>
 <strong>十年后的我，请多关照。</strong></p>
 <hr>
-<p><em>写于2024年12月19日深夜</em>
-<em>距离第一次写博客，整整十年</em></p> </article> </div> <!-- 文章导航 --> <nav class="border-t border-gray-200 dark:border-gray-800 pt-4" data-astro-cid-7jjqptxk> <h2 class="text-lg font-bold text-gray-900 dark:text-gray-100 mb-3 text-center" data-astro-cid-7jjqptxk>继续阅读</h2> <div class="grid grid-cols-1 md:grid-cols-2 gap-8" data-astro-cid-7jjqptxk> <a href="/blog/2024/10/处理最新版idea验证失败问题" class="group block p-6 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-gray-300 dark:hover:border-gray-600 transition-colors" data-astro-cid-7jjqptxk> <div class="flex items-center mb-3" data-astro-cid-7jjqptxk> <svg class="w-5 h-5 text-gray-400 dark:text-gray-500 mr-2 group-hover:text-blue-500 dark:group-hover:text-blue-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-astro-cid-7jjqptxk> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" data-astro-cid-7jjqptxk></path> </svg> <span class="text-sm font-medium text-gray-500 dark:text-gray-400" data-astro-cid-7jjqptxk>上一篇</span> </div> <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors line-clamp-2 mb-2" data-astro-cid-7jjqptxk> 处理最新版IDEA验证失败问题 </h3> <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2 mb-2" data-astro-cid-7jjqptxk> 2024 处理最新版IDEA验证失败问题 </p> <div class="flex items-center text-xs text-gray-500 dark:text-gray-500" data-astro-cid-7jjqptxk> <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-astro-cid-7jjqptxk> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" data-astro-cid-7jjqptxk></path> </svg> 2024年10月21日 </div> </a> <a href="/blog/2025/08/start-spring" class="group block p-6 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-gray-300 dark:hover:border-gray-600 transition-colors md:text-right" data-astro-cid-7jjqptxk> <div class="flex items-center justify-end mb-3" data-astro-cid-7jjqptxk> <span class="text-sm font-medium text-gray-500 dark:text-gray-400" data-astro-cid-7jjqptxk>下一篇</span> <svg class="w-5 h-5 text-gray-400 dark:text-gray-500 ml-2 group-hover:text-purple-500 dark:group-hover:text-purple-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-astro-cid-7jjqptxk> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" data-astro-cid-7jjqptxk></path> </svg> </div> <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100 group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors line-clamp-2 mb-2" data-astro-cid-7jjqptxk> Start Spring 平替 </h3> <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2 mb-2" data-astro-cid-7jjqptxk> IDEA 创建SpringBoot初始化项目平替 </p> <div class="flex items-center justify-end text-xs text-gray-500 dark:text-gray-500" data-astro-cid-7jjqptxk> <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-astro-cid-7jjqptxk> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" data-astro-cid-7jjqptxk></path> </svg> 2025年8月13日 </div> </a> </div> </nav> </main> <!-- 复制链接功能 --> <script>
+<p><em>写于2025年8月01日正午</em>
+<em>距离第一次写博客，已经十多年了</em></p> </article> </div> <!-- 文章导航 --> <nav class="border-t border-gray-200 dark:border-gray-800 pt-4" data-astro-cid-7jjqptxk> <h2 class="text-lg font-bold text-gray-900 dark:text-gray-100 mb-3 text-center" data-astro-cid-7jjqptxk>继续阅读</h2> <div class="grid grid-cols-1 md:grid-cols-2 gap-8" data-astro-cid-7jjqptxk> <a href="/blog/2024/10/处理最新版idea验证失败问题" class="group block p-6 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-gray-300 dark:hover:border-gray-600 transition-colors" data-astro-cid-7jjqptxk> <div class="flex items-center mb-3" data-astro-cid-7jjqptxk> <svg class="w-5 h-5 text-gray-400 dark:text-gray-500 mr-2 group-hover:text-blue-500 dark:group-hover:text-blue-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-astro-cid-7jjqptxk> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" data-astro-cid-7jjqptxk></path> </svg> <span class="text-sm font-medium text-gray-500 dark:text-gray-400" data-astro-cid-7jjqptxk>上一篇</span> </div> <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors line-clamp-2 mb-2" data-astro-cid-7jjqptxk> 处理最新版IDEA验证失败问题 </h3> <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2 mb-2" data-astro-cid-7jjqptxk> 2024 处理最新版IDEA验证失败问题 </p> <div class="flex items-center text-xs text-gray-500 dark:text-gray-500" data-astro-cid-7jjqptxk> <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-astro-cid-7jjqptxk> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" data-astro-cid-7jjqptxk></path> </svg> 2024年10月21日 </div> </a> <a href="/blog/2025/08/start-spring" class="group block p-6 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-gray-300 dark:hover:border-gray-600 transition-colors md:text-right" data-astro-cid-7jjqptxk> <div class="flex items-center justify-end mb-3" data-astro-cid-7jjqptxk> <span class="text-sm font-medium text-gray-500 dark:text-gray-400" data-astro-cid-7jjqptxk>下一篇</span> <svg class="w-5 h-5 text-gray-400 dark:text-gray-500 ml-2 group-hover:text-purple-500 dark:group-hover:text-purple-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-astro-cid-7jjqptxk> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" data-astro-cid-7jjqptxk></path> </svg> </div> <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100 group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors line-clamp-2 mb-2" data-astro-cid-7jjqptxk> Start Spring 平替 </h3> <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2 mb-2" data-astro-cid-7jjqptxk> IDEA 创建SpringBoot初始化项目平替 </p> <div class="flex items-center justify-end text-xs text-gray-500 dark:text-gray-500" data-astro-cid-7jjqptxk> <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-astro-cid-7jjqptxk> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" data-astro-cid-7jjqptxk></path> </svg> 2025年8月13日 </div> </a> </div> </nav> </main> <!-- 复制链接功能 --> <script>
       const copyBtn = document.getElementById('copy-link');
       if (copyBtn) {
         copyBtn.addEventListener('click', async () => {
